@@ -61,20 +61,47 @@ main{padding-top:50px;padding-bottom:76px}
 @media(max-width:690px){.container{padding-inline:18px}main{padding-top:24px;padding-bottom:42px}.hero{grid-template-columns:1fr;gap:18px;padding:28px 23px}.hero h1{font-size:43px}.position{font-size:21px}.portrait-wrap{justify-self:center;max-width:225px;grid-row:1}.portrait{aspect-ratio:4/4.5}.caption{font-size:11px}.content-section{padding-top:38px}.section-heading{align-items:start;flex-direction:column;gap:7px}.section-heading h2{font-size:30px}.research-grid{grid-template-columns:1fr}.lower-grid{grid-template-columns:1fr;margin-top:28px}.panel{padding:22px}.nav a{font-size:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.research-link{transition:none}}
 </style>
+
+<style id="rkm-left-sidebar-style">
+/* Consistent vertical academic navigation across every page */
+body{padding-left:234px!important}
+.rkm-sidebar{position:fixed!important;inset:5px auto 0 0;z-index:3000;width:234px;padding:31px 18px 24px;background:#fff;border-right:1px solid #e3ded7;overflow-y:auto;display:flex;flex-direction:column;gap:18px;box-sizing:border-box}
+.rkm-sidebar-heading{font:700 23px/1.25 Georgia,"Times New Roman",serif!important;letter-spacing:-.025em;color:#1a2936!important;text-decoration:none!important;display:block}
+.rkm-sidebar-heading:hover{color:#9b2636!important}
+.rkm-sidebar-subtitle{font:700 10px/1.45 Arial,sans-serif!important;letter-spacing:.13em;text-transform:uppercase;color:#747b82!important;border-bottom:1px solid #e9e4dc;padding-bottom:21px;margin-top:-8px}
+.rkm-sidebar-links{display:flex;flex-direction:column;gap:5px}
+.rkm-sidebar-links a{display:block;font:600 14px/1.4 Arial,Helvetica,sans-serif!important;color:#405064!important;text-decoration:none!important;padding:11px 12px;border-left:3px solid transparent;background:transparent;transition:background .15s}
+.rkm-sidebar-links a:hover{color:#9b2636!important;background:#faf7f4!important}
+.rkm-sidebar-links a[aria-current="page"]{color:#9b2636!important;border-left-color:#9b2636;font-weight:700!important;background:#f8f3f0!important}
+.rkm-sidebar-note{font:12px/1.5 Arial,sans-serif!important;color:#84909b!important;margin-top:auto}
+@media(max-width:800px){
+body{padding-left:0!important}
+.rkm-sidebar{position:relative!important;inset:auto!important;width:100%;display:block;padding:16px 18px;border-right:0;border-bottom:1px solid #e3ded7;overflow:visible}
+.rkm-sidebar-heading{font-size:20px!important;margin-bottom:8px}
+.rkm-sidebar-subtitle,.rkm-sidebar-note{display:none}
+.rkm-sidebar-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 6px}
+.rkm-sidebar-links a{padding:8px 8px;font-size:12px!important}
+}
+@media(max-width:380px){.rkm-sidebar-links{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.rkm-sidebar-links a{transition:none}}
+</style>
 </head>
 <body>
 <div class="top-rule" aria-hidden="true"></div>
-<header class="site-header"><div class="container header-inner">
-<a class="site-title" href="index.html">Ranjan K. Mallik</a>
-<nav class="nav" aria-label="Main navigation">
-<a class="current" aria-current="page" href="index.html">Home</a>
+<aside class="rkm-sidebar" aria-label="Site navigation">
+<a class="rkm-sidebar-heading" href="index.html">Ranjan K. Mallik</a>
+<div class="rkm-sidebar-subtitle">Indian Institute of Technology Delhi</div>
+<nav class="rkm-sidebar-links" aria-label="Main navigation">
+<a href="index.html" aria-current="page">Home</a>
 <a href="research.html">Research</a>
 <a href="respub.htm">Publications</a>
 <a href="educ.htm">Education</a>
 <a href="wemem.htm">Work Experience</a>
 <a href="tea.htm">Teaching</a>
 <a href="supv.htm">Supervision</a>
-</nav></div></header>
+</nav>
+<div class="rkm-sidebar-note">Department of Electrical Engineering<br>IIT Delhi</div>
+</aside>
 <main class="container">
 <section class="hero" aria-labelledby="professor-name">
 <div>
