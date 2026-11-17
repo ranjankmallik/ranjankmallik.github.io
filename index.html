@@ -1,167 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Academic profile, research areas, publications and contact information for Professor Ranjan K. Mallik, IIT Delhi.">
-<title>Ranjan K. Mallik | Professor, IIT Delhi</title>
-<style>
-:root{--ink:#1a2936;--muted:#52606d;--accent:#9b2636;--border:#e3ded7;--paper:#f9f8f5;--white:#fff;--soft:#eee9e3}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.65}
-a{color:inherit}a:focus-visible{outline:3px solid #c16b7b;outline-offset:4px}
-.top-rule{height:5px;background:var(--accent)}
-.container{max-width:1140px;margin:0 auto;padding-left:28px;padding-right:28px}
-.site-header{background:var(--white);border-bottom:1px solid var(--border)}
-.header-inner{min-height:85px;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.site-title{font-family:Georgia,"Times New Roman",serif;font-size:22px;white-space:nowrap;font-weight:700;text-decoration:none;color:#172838}
-.nav{display:flex;justify-content:flex-end;align-items:center;gap:12px 19px;flex-wrap:wrap}
-.nav a{font-size:13px;font-weight:600;text-decoration:none;color:#425365;padding:8px 0;white-space:nowrap}
-.nav a:hover,.nav a.current{color:var(--accent);text-decoration:underline;text-underline-offset:7px}
-main{padding-top:50px;padding-bottom:76px}
-.hero{background:#fff;display:grid;grid-template-columns:minmax(0,1fr) 305px;gap:60px;align-items:center;border:1px solid var(--border);padding:56px 65px;position:relative;overflow:hidden}
-.hero:before{content:"";height:100%;width:6px;position:absolute;left:0;top:0;background:var(--accent)}
-.overline{font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--accent);font-weight:800;margin:0 0 20px}
-.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(43px,5.8vw,66px);font-weight:400;letter-spacing:-.038em;line-height:1.09;color:#192b3b;margin:0 0 20px}
-.divider{background:var(--accent);height:3px;width:60px;margin:25px 0}
-.position{font-family:Georgia,"Times New Roman",serif;color:#253848;font-size:23px;line-height:1.4;margin:0 0 12px}
-.affiliation{color:var(--muted);font-size:17px;margin:6px 0;line-height:1.55}
-.quick-links{display:flex;flex-wrap:wrap;gap:16px 25px;margin-top:28px}
-.quick-links a{color:var(--accent);text-decoration:none;font-size:14px;font-weight:700;border-bottom:1px solid #b9757b;padding-bottom:3px}
-.quick-links a:hover{color:#651c27}
-.portrait-wrap{margin:0;justify-self:end;width:100%;max-width:305px;padding:9px;border:1px solid #dad6d0;background:#fff;box-shadow:0 12px 25px #1c2b3a12}
-.portrait{display:block;width:100%;height:auto;aspect-ratio:185/234;object-fit:contain;object-position:center;background:#eee}
-.caption{display:block;color:#797e83;font-size:12px;text-align:center;margin-top:11px}
-.content-section{padding-top:51px}
-.section-heading{border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:baseline;gap:18px;margin-bottom:19px;padding-bottom:15px}
-.section-heading h2{font:400 34px/1.25 Georgia,serif;letter-spacing:-.022em;margin:0;color:#182a3a}
-.section-heading a{color:var(--accent);text-decoration:none;font-weight:700;font-size:13px;white-space:nowrap}
-.section-heading a:hover{text-decoration:underline}
-.section-sub{font-size:14px;color:var(--muted);margin:0 0 20px;max-width:690px}
-.research-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 22px}
-.research-link{display:grid;grid-template-columns:35px minmax(0,1fr) 20px;gap:14px;align-items:center;border-bottom:1px solid var(--border);padding:17px 7px;text-decoration:none;transition:background .16s ease}
-.research-link:hover{background:#fff;color:var(--accent)}
-.research-link .num{font-family:Georgia,serif;font-size:15px;color:#a08b7b}
-.research-link .label{font-size:15px;font-weight:600}
-.research-link .arr{color:var(--accent);font-size:18px}
-.lower-grid{display:grid;grid-template-columns:1.45fr .95fr;gap:32px;margin-top:47px}
-.panel{background:#fff;border:1px solid var(--border);padding:29px 32px;min-width:0}
-.panel h2{font:400 27px/1.3 Georgia,serif;margin:0 0 13px;color:#182a3a}
-.panel-intro{font-size:13px;color:var(--muted);margin:0 0 14px}
-.work{padding:15px 0;border-top:1px solid var(--border)}
-.work a{font-size:15px;font-weight:600;line-height:1.5;display:block;text-decoration:none;color:#263c4d}
-.work a:hover{color:var(--accent);text-decoration:underline}
-.work small{color:#807d79;display:block;margin-top:5px;font-size:12px}
-.view-all{display:inline-block;font-size:13px;font-weight:700;color:var(--accent);text-decoration:none;margin-top:17px;border-bottom:1px solid #bb797f}
-.contact p,.contact address{font-size:14px;font-style:normal;line-height:1.72;margin:0 0 17px}
-.contact strong{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent)}
-.contact a{color:#2e526b;overflow-wrap:anywhere}
-.site-footer{background:#fff;border-top:1px solid var(--border);padding:23px 0;color:#687482;font-size:13px}
-@media(max-width:940px){.header-inner{display:block;padding-top:18px;padding-bottom:17px}.nav{justify-content:flex-start;gap:9px 18px;margin-top:12px}.hero{padding:40px;gap:30px;grid-template-columns:minmax(0,1fr) 255px}.lower-grid{grid-template-columns:1.1fr .9fr;gap:17px}}
-@media(max-width:690px){.container{padding-inline:18px}main{padding-top:24px;padding-bottom:42px}.hero{grid-template-columns:1fr;gap:18px;padding:28px 23px}.hero h1{font-size:43px}.position{font-size:21px}.portrait-wrap{justify-self:center;max-width:225px;grid-row:1}.portrait{aspect-ratio:185/234}.caption{font-size:11px}.content-section{padding-top:38px}.section-heading{align-items:start;flex-direction:column;gap:7px}.section-heading h2{font-size:30px}.research-grid{grid-template-columns:1fr}.lower-grid{grid-template-columns:1fr;margin-top:28px}.panel{padding:22px}.nav a{font-size:12px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.research-link{transition:none}}
-</style>
-
-<style id="rkm-left-sidebar-style">
-/* Consistent vertical academic navigation across every page */
-body{padding-left:234px!important}
-.rkm-sidebar{position:fixed!important;inset:5px auto 0 0;z-index:3000;width:234px;padding:31px 18px 24px;background:#fff;border-right:1px solid #e3ded7;overflow-y:auto;display:flex;flex-direction:column;gap:18px;box-sizing:border-box}
-.rkm-sidebar-heading{font:700 23px/1.25 Georgia,"Times New Roman",serif!important;letter-spacing:-.025em;color:#1a2936!important;text-decoration:none!important;display:block}
-.rkm-sidebar-heading:hover{color:#9b2636!important}
-.rkm-sidebar-subtitle{font:700 10px/1.45 Arial,sans-serif!important;letter-spacing:.13em;text-transform:uppercase;color:#747b82!important;border-bottom:1px solid #e9e4dc;padding-bottom:21px;margin-top:-8px}
-.rkm-sidebar-links{display:flex;flex-direction:column;gap:5px}
-.rkm-sidebar-links a{display:block;font:600 14px/1.4 Arial,Helvetica,sans-serif!important;color:#405064!important;text-decoration:none!important;padding:11px 12px;border-left:3px solid transparent;background:transparent;transition:background .15s}
-.rkm-sidebar-links a:hover{color:#9b2636!important;background:#faf7f4!important}
-.rkm-sidebar-links a[aria-current="page"]{color:#9b2636!important;border-left-color:#9b2636;font-weight:700!important;background:#f8f3f0!important}
-.rkm-sidebar-note{font:12px/1.5 Arial,sans-serif!important;color:#84909b!important;margin-top:auto}
-@media(max-width:800px){
-body{padding-left:0!important}
-.rkm-sidebar{position:relative!important;inset:auto!important;width:100%;display:block;padding:16px 18px;border-right:0;border-bottom:1px solid #e3ded7;overflow:visible}
-.rkm-sidebar-heading{font-size:20px!important;margin-bottom:8px}
-.rkm-sidebar-subtitle,.rkm-sidebar-note{display:none}
-.rkm-sidebar-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px 6px}
-.rkm-sidebar-links a{padding:8px 8px;font-size:12px!important}
-}
-@media(max-width:380px){.rkm-sidebar-links{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){.rkm-sidebar-links a{transition:none}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Page of Ranjan K. Mallik</title>
+  <style>
+    /* The original site's colours and structure: olive #B7B793, navy text, blue links and white content. */
+    :root { --original-olive: #B7B793; --original-navy: navy; --original-blue: blue; }
+    * { box-sizing: border-box; }
+    html { background: white; }
+    body { background: white; color: black; margin: 0; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.35; }
+    a { color: var(--original-blue); text-decoration: underline; }
+    a:visited { color: var(--original-blue); }
+    .page { width: min(100%, 1060px); margin: 0 auto; padding: 14px 12px 50px; }
+    .banner { background: var(--original-olive); padding: 10px 14px; font-size: 21px; font-weight: 700; color: black; }
+    .site { display: grid; grid-template-columns: 172px minmax(0, 1fr); gap: 4px; margin-top: 4px; align-items: stretch; }
+    .sidebar { background: var(--original-olive); padding: 22px 9px; min-height: 520px; }
+    .sidebar-title { font-size: 17px; font-weight: 700; margin: 0 0 16px; }
+    .sidebar nav { display: flex; flex-direction: column; align-items: flex-start; gap: 13px; }
+    .sidebar nav a { font-weight: 700; font-size: 15px; line-height: 1.2; }
+    .main { padding: 22px 17px 30px 24px; min-width: 0; background: white; }
+    .old-portrait { float: right; width: 185px; height: 234px; object-fit: contain; object-position: center; margin: 0 0 14px 24px; border: 0; transform: none; image-orientation: from-image; }
+    .main h1, .main h2 { color: var(--original-navy); font-size: 19px; line-height: 1.25; margin: 0; font-weight: 700; }
+    .main h1 { margin-bottom: 0; }
+    .main .position { color: var(--original-navy); font-weight: 700; font-size: 19px; margin: 0 0 10px; }
+    .main .affiliation { color: var(--original-navy); font-weight: 700; font-size: 19px; line-height: 1.25; margin: 0 0 22px; }
+    .main h2 { color: black; margin: 0 0 5px; }
+    .research { font-size: 17px; color: var(--original-navy); font-weight: 700; margin: 0 0 27px; }
+    .correspondence { color: var(--original-navy); font-size: 17px; font-weight: 700; }
+    .correspondence h2 { color: var(--original-navy); margin-bottom: 13px; }
+    .correspondence p { margin: 0 0 17px; }
+    .correspondence .email { overflow-wrap: anywhere; }
+    @media (max-width: 690px) {
+      .page { padding: 6px 5px 28px; }
+      .banner { padding: 9px 11px; font-size: 18px; }
+      .site { grid-template-columns: 1fr; }
+      .sidebar { min-height: 0; padding: 13px 12px; }
+      .sidebar-title { margin-bottom: 9px; }
+      .sidebar nav { flex-direction: row; flex-wrap: wrap; gap: 8px 16px; }
+      .sidebar nav a { font-size: 14px; }
+      .main { padding: 18px 13px; }
+      .old-portrait { width: min(34vw, 155px); height: auto; aspect-ratio: 185 / 234; margin: 0 0 8px 13px; }
+      .main h1,.main .position,.main .affiliation { font-size: 17px; }
+      .research,.correspondence { font-size: 16px; }
+    }
+  </style>
 </head>
 <body>
-<div class="top-rule" aria-hidden="true"></div>
-<aside class="rkm-sidebar" aria-label="Site navigation">
-<a class="rkm-sidebar-heading" href="index.html">Ranjan K. Mallik</a>
-<div class="rkm-sidebar-subtitle">Indian Institute of Technology Delhi</div>
-<nav class="rkm-sidebar-links" aria-label="Main navigation">
-<a href="index.html" aria-current="page">Home</a>
-<a href="research.html">Research</a>
-<a href="respub.htm">Publications</a>
-<a href="educ.htm">Education</a>
-<a href="wemem.htm">Work Experience</a>
-<a href="tea.htm">Teaching</a>
-<a href="supv.htm">Supervision</a>
-</nav>
-<div class="rkm-sidebar-note">Department of Electrical Engineering<br>IIT Delhi</div>
-</aside>
-<main class="container">
-<section class="hero" aria-labelledby="professor-name">
-<div>
-<p class="overline">Faculty profile · Indian Institute of Technology Delhi</p>
-<h1 id="professor-name">Ranjan K. Mallik</h1>
-<div class="divider" aria-hidden="true"></div>
-<p class="position">Professor and J. C. Bose Fellow</p>
-<p class="affiliation">Department of Electrical Engineering</p>
-<p class="affiliation">Indian Institute of Technology Delhi</p>
-<div class="quick-links">
-<a href="research.html">Explore research &rarr;</a>
-<a href="respub.htm">All publications &rarr;</a>
-</div>
-</div>
-<figure class="portrait-wrap">
-<img class="portrait" src="assets/ranjan-mallik-old-portrait.jpg" width="185" height="234" loading="eager" alt="Photograph of Professor Ranjan K. Mallik">
-<figcaption class="caption">Professor Ranjan K. Mallik</figcaption>
-</figure>
-</section>
-<section class="content-section" aria-labelledby="research-heading">
-<div class="section-heading"><h2 id="research-heading">Research interests</h2><a href="research.html">Browse research work &rarr;</a></div>
-<p class="section-sub">My research encompasses wireless communications, communication systems, and applied mathematics. The areas below reflect my principal research interests and link to selected publications.</p>
-<div class="research-grid">
-<a class="research-link" href="research.html#wireless-channels"><span class="num">01</span><span class="label">Diversity combining &amp; channel modelling</span><span class="arr" aria-hidden="true">&nearr;</span></a>
-<a class="research-link" href="research.html#mimo-space-time"><span class="num">02</span><span class="label">MIMO and space-time systems</span><span class="arr" aria-hidden="true">&nearr;</span></a>
-<a class="research-link" href="research.html#cooperative-communications"><span class="num">03</span><span class="label">Cooperative communications</span><span class="arr" aria-hidden="true">&nearr;</span></a>
-<a class="research-link" href="research.html#multiple-access"><span class="num">04</span><span class="label">Multiple access systems</span><span class="arr" aria-hidden="true">&nearr;</span></a>
-<a class="research-link" href="research.html#power-line"><span class="num">05</span><span class="label">Power line communications</span><span class="arr" aria-hidden="true">&nearr;</span></a>
-<a class="research-link" href="research.html#molecular"><span class="num">06</span><span class="label">Molecular communications</span><span class="arr" aria-hidden="true">&nearr;</span></a>
-<a class="research-link" href="research.html#quantum"><span class="num">07</span><span class="label">Quantum communications</span><span class="arr" aria-hidden="true">&nearr;</span></a>
-<a class="research-link" href="research.html#direction-finding"><span class="num">08</span><span class="label">Direction-finding systems</span><span class="arr" aria-hidden="true">&nearr;</span></a>
-<a class="research-link" href="research.html#difference-equations"><span class="num">09</span><span class="label">Linear difference equations</span><span class="arr" aria-hidden="true">&nearr;</span></a>
-<a class="research-link" href="research.html#matrix-structures"><span class="num">10</span><span class="label">Special matrix structures</span><span class="arr" aria-hidden="true">&nearr;</span></a>
-</div>
-</section>
-<div class="lower-grid">
-<section class="panel" aria-labelledby="work-heading">
-<h2 id="work-heading">Selected publications</h2>
-<p class="panel-intro">Recent examples from the complete research publications archive.</p>
-<article class="work"><a href="respub.htm#pub-31">Reconstruct-and-forward relaying for semantic communication &nearr;</a><small>IEEE Open Journal of the Communications Society · 2026</small></article>
-<article class="work"><a href="respub.htm#pub-43">Energy detection of ASK with receive diversity in Nakagami-m fading &nearr;</a><small>IEEE Transactions on Communications · 2026</small></article>
-<article class="work"><a href="respub.htm#pub-48">Signaling for a fluid antenna system with uniform correlation &nearr;</a><small>IEEE Transactions on Wireless Communications · 2026</small></article>
-<a class="view-all" href="respub.htm">Complete publications list &rarr;</a>
-</section>
-<section class="panel contact" aria-labelledby="contact-heading">
-<h2 id="contact-heading">Contact</h2>
-<address>
-<p><strong>Address for correspondence</strong><br>
-Dr. Ranjan K. Mallik<br>
-Department of Electrical Engineering<br>
-Indian Institute of Technology Delhi<br>
-Hauz Khas, New Delhi 110016, India</p>
-<p><strong>Telephone</strong><br><a href="tel:+911126591049">+91-(11)-2659-1049</a></p>
-<p><strong>Email</strong><br>
-<a href="mailto:rkmallik@ee.iitd.ernet.in">rkmallik@ee.iitd.ernet.in</a><br>
-<a href="mailto:ranjankmallik@yahoo.co.in">ranjankmallik@yahoo.co.in</a><br>
-<a href="mailto:rkmallik@hotmail.com">rkmallik@hotmail.com</a></p>
-</address>
-</section></div>
-</main>
-<footer class="site-footer"><div class="container">Ranjan K. Mallik · Department of Electrical Engineering · IIT Delhi</div></footer>
+  <div class="page">
+    <header class="banner">Home Page of Ranjan K. Mallik</header>
+    <div class="site">
+      <aside class="sidebar">
+        <div class="sidebar-title">Ranjan K. Mallik</div>
+        <nav aria-label="Original website sections">
+          <a href="index.html">Home</a>
+          <a href="educ.htm">Education</a>
+          <a href="wemem.htm">Work Experience</a>
+          <a href="tea.htm">Teaching</a>
+          <a href="supv.htm">Supervision/Guidance</a>
+          <a href="respub.htm">Research and Publications</a>
+        </nav>
+      </aside>
+      <main class="main">
+        <img class="old-portrait" src="assets/ranjan-mallik-old-portrait.jpg" width="185" height="234" alt="Photograph of Ranjan K. Mallik">
+        <h1>Ranjan K. Mallik</h1>
+        <p class="position">Professor and J. C. Bose Fellow</p>
+        <p class="affiliation">Department of Electrical Engineering<br>IIT Delhi</p>
+
+        <section aria-labelledby="research-title">
+          <h2 id="research-title">Research Areas:</h2>
+          <p class="research">Diversity Combining and Channel Modeling for Wireless Communications, MIMO and Space-Time Systems, Cooperative Communications, Multiple Access Systems, Power Line Communications, Molecular Communications, Quantum Communications, Difference Equations, Linear Algebra</p>
+        </section>
+
+        <section class="correspondence" aria-labelledby="address-title">
+          <h2 id="address-title">Address for Correspondence:</h2>
+          <p>Dr. Ranjan K. Mallik<br>
+          Department of Electrical Engineering<br>
+          Indian Institute of Technology Delhi<br>
+          Hauz Khas, New Delhi 110016, INDIA</p>
+          <p>Phone: +91-(11)-2659-1049</p>
+          <p class="email">E-mail: rkmallik@ee.iitd.ernet.in, ranjankmallik@yahoo.co.in, rkmallik@hotmail.com</p>
+        </section>
+      </main>
+    </div>
+  </div>
 </body>
 </html>
